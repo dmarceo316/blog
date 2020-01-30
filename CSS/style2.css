@@ -1,0 +1,285 @@
+
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+
+
+}
+
+/* pictures for divs */
+.img1{
+    background-image:url('../images/fall2.jpg');
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.img2{
+    background-image:url('../images/fall1.jpg');
+    min-height: 500px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* paralax effect */
+.img1, .img2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* top div */
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.img1 h1{
+    color: rgb(255, 255, 255);
+    padding-top:20vh;
+    text-transform: uppercase;
+    font-size: 5vh;
+    letter-spacing: 5px;
+}
+
+.img1 h2{
+    color:white;
+}
+
+/* navigation */
+.nav{
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+.nav li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;       
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav li:hover{
+    opacity: .6;   
+}
+
+/* side navigation */
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.open-slide{
+    display:none;
+}
+
+/* middle section */
+.body{
+    min-height: 100px;
+    padding-top:10px;
+    padding-bottom: 40px;
+    background-color: #0F110C;
+    color: white;
+    text-align: center;
+}
+
+.body h1{
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 4px;
+    font-size: 60px;
+    text-shadow: 0px 5px 10px black;
+}
+
+.body h2{
+    font-size: 30px;
+}
+
+.body p{
+
+    line-height: 40px;
+    letter-spacing: 2px;
+    min-width: 100%;
+    width: 100%;
+    align-content: center; 
+}
+
+.body button {
+    margin-top: 30px;
+    border: 2px solid white;
+    background-color: #0F110C;
+    color:white;
+    width: 20vh;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+}
+button a{
+    text-decoration: none;
+}
+
+button a:hover{
+    color: #A52422; 
+}
+
+button a:visited{
+    color: white;
+}
+
+.body .line1 {
+    margin-bottom: 50px;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+.body .line2{
+    margin-top: 50px;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+/* bottom div */
+.img2 h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.img2 p{
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 20px;
+}
+
+.img2 button {
+    width: 20vh;
+    height: 50px;
+    border: 3px solid white;
+    letter-spacing: 3px;
+    background: none;
+    font-size: 20px;
+    color:white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.img2 button:hover{
+    color: #A52422; 
+}
+
+.img2 ul li{
+    color: white;
+}
+
+.cite{
+    display: inline-flex;
+}
+
+.cite li{
+    margin-left: 15px;
+    list-style: none;
+}
+
+/* pictures on body */
+.img3{
+    background: url('../images/booL.jpg') no-repeat center;
+    background-position: 50% 60%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;   
+}
+
+.img4{
+    background: url('../images/friends.jpg') no-repeat ;
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;      
+}
+
+
+/* fade features */
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity:  1;
+}
+
+/* pc to mobile */
+@media screen and (max-width:1024px){
+    .Nav{
+        width: 100%;
+     
+    }
+}
+
+/* mobile view */
+@media screen and (max-width: 786px){
+ body{
+     overflow-x : hidden;
+    }
+.nav {
+    display: none;
+    }
+.open-slide{
+    display: block
+    }
+}
+
+/* link fade on navigation via js */
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{ 
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+
