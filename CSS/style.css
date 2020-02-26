@@ -257,7 +257,9 @@ button:hover{
 
 .img1, .img2 { 
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
+    background-attachment: scroll;
+    max-width: 786px;    
 }
 
 .img1 h1{
