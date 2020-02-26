@@ -1,5 +1,4 @@
 
-
 body, html{
     height: 100%;
     width: 100%;
@@ -42,7 +41,7 @@ body, html{
 
 .img1 h1{
     color: rgb(255, 255, 255);
-    padding-top:20vh;
+    padding-top:25vh;
     text-transform: uppercase;
     font-size: 100px;
     letter-spacing: 5px;
@@ -68,7 +67,6 @@ body, html{
 .nav li a{
     text-decoration: none;
     color: white;
-    
 }
 
 .nav li:hover{
@@ -120,10 +118,9 @@ body, html{
     letter-spacing: 4px;
     font-size: 60px;
     text-shadow: 0px 5px 10px black;
-
 }
 
-.body p{
+.body h3{
 
     line-height: 40px;
     letter-spacing: 2px;
@@ -193,7 +190,7 @@ button:hover{
     border: 3px solid white;
     letter-spacing: 3px;
     background: none;
-    font-size: 20px;
+    font-size: 1em;
     color:white;
     font-family: 'Shadows Into Light', cursive;
 }
@@ -218,7 +215,7 @@ button:hover{
 /* fade features */
 .fade-in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 100ms ease-in;
 }
 
 .fade-in.appear{
@@ -230,7 +227,6 @@ button:hover{
     .Nav{
         width: 100%; 
     }
-
 }
 
 /*for mobile*/
@@ -247,16 +243,28 @@ button:hover{
     display: block;
 }
 
+.img1{
+    background-image:url('../images/fall2.jpg');
+    width: 100%;
+}
 
-/* navigation fade on js */
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to{ 
-        opacity: 1;
-        transform: translate(0px);
-    }
+.img2{
+    background-image:url('../images/fall1.jpg');
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.img1, .img2 { 
+    background-position: center;
+    background-size: cover;    
+}
+
+.img1 h1{
+    color: rgb(255, 255, 255);
+    padding-top: 3vh;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 5px;
 }
 }
