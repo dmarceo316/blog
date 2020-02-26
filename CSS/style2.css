@@ -239,7 +239,7 @@ button a:visited{
 /* fade features */
 .fade-in {
     opacity: 0;
-    transition: opacity 100ms ease-in;
+    transition: opacity 200ms ease-in;
 }
 
 .fade-in.appear{
