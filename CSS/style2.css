@@ -220,7 +220,7 @@ button a:visited{
 
 /* pictures on body */
 .img3{
-    background: url('/images/booL.jpg') no-repeat center;
+    background: url('../images/booL.jpg') no-repeat center;
     background-position: 50% 60%;
     background-size: cover;
     width: 100%;
@@ -228,7 +228,7 @@ button a:visited{
 }
 
 .img4{
-    background: url('/images/friends.jpg') no-repeat ;
+    background: url('../images/friends.jpg') no-repeat ;
     background-position: 50% 30%;
     background-size: cover;
     width: 100%;
@@ -291,7 +291,7 @@ button a:visited{
     color: rgb(255, 255, 255);
     padding-top: 3vh;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 5px;
 }
 }
